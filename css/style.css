@@ -13,7 +13,7 @@ body {
   width: 100%;
   background-image: url(../img/background.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   position: relative;
 }
 
@@ -307,4 +307,21 @@ footer p:nth-child(2) {
   color: #f9004d;
   bottom: 35px;
   font-size: 14px;
+}
+@media (max-width: 991px) {
+  nav ul li {
+    padding: 10px;
+  }
+  .main {
+    gap: 50px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .hero {
+    zoom: 0.5;
+  }
+  .about img {
+    width: 525px;
+  }
 }
